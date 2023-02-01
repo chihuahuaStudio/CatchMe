@@ -1,0 +1,1604 @@
+<REAPER_PROJECT 0.1 "6.28/OSX64" 1633067794
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 1
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 600
+  GRID 3454 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 0
+  ZOOM 177.33255372577614 0 0
+  VZOOMEX 0 104
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  <RECORD_CFG
+    ZXZhdxgAAA==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE "/Users/fernandofranco/Desktop/CrisAnimaux.wav"
+  RENDER_FMT 0 2 0
+  RENDER_1X 0
+  RENDER_RANGE 1 0 0 18 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 0
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 48000 1 0
+  <RENDER_CFG
+    ZXZhdxgAAA==
+  >
+  LOCK 1
+  <METRONOME 7 2
+    VOL 0.25 0.125
+    FREQ 800 1600 1
+    BEATLEN 4
+    SAMPLES "" ""
+    PATTERN 2863311530 2863311529
+  >
+  GLOBAL_AUTO -1
+  TEMPO 60 4 4
+  PLAYRATE 1 0 0.25 4
+  SELECTION 0 0
+  SELECTION2 0 1.77068447615977
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 -1 -1 -1 0 0 0 -1 -1 0
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 0.86872391523433 0 -1 -1 1
+  MASTER_FX 1
+  MASTER_SEL 1
+  <MASTERPLAYSPEEDENV
+    EGUID {29754EE9-7F15-4D41-A578-E64431D109D8}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {6E612034-D8E7-DC4F-B5DC-0325418F9700}
+    ACT 1 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  <PROJBAY
+  >
+  <TRACK {29241B65-E018-9A46-844D-FFBEC72799EC}
+    NAME zebra_whinny_01
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {29241B65-E018-9A46-844D-FFBEC72799EC}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 2.19526041666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CCFD8A7D-30DC-AE4E-BCB9-B231C18E0537}
+      IID 1
+      NAME zebra_whinny_01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {100FAE66-5904-A247-A65B-750054E22A4E}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/zebra_whinny_01.wav"
+      >
+    >
+  >
+  <TRACK {BBC28E45-F719-0E42-BF97-AFEB22661920}
+    NAME zebra_whinny_02
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.27620620168029 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BBC28E45-F719-0E42-BF97-AFEB22661920}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.87909375
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A70AB6B6-D8A9-4443-BEB7-0E0CE586344D}
+      IID 2
+      NAME zebra_whinny_02.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {646AD77A-7E19-B04A-ADA8-596831CB6C28}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/zebra_whinny_02.wav"
+      >
+    >
+  >
+  <TRACK {1E417DD7-8888-4B45-AC26-44951D98DD00}
+    NAME zebra_whinny_03
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1E417DD7-8888-4B45-AC26-44951D98DD00}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.88451041666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {25D2C155-55F8-2847-B992-24D55C2C3FC5}
+      IID 3
+      NAME zebra_whinny_03.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4F9FBC4C-2323-8349-8C78-98673668A5D4}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/zebra_whinny_03.wav"
+      >
+    >
+  >
+  <TRACK {B5776552-AF71-8745-837F-E8B5022C885D}
+    NAME zebra_whinny_04
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 23 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B5776552-AF71-8745-837F-E8B5022C885D}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.95940625
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CC771B5C-67AA-0F4C-B454-23E34CA050D9}
+      IID 4
+      NAME zebra_whinny_04.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D4EACF2C-B9CF-E94B-BC5A-F4D412F0E489}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/zebra_whinny_04.wav"
+      >
+    >
+  >
+  <TRACK {28B6B859-9C02-F541-AC90-DA034FDBC118}
+    NAME zebra_whinny_05
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {28B6B859-9C02-F541-AC90-DA034FDBC118}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.06784375
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8D44C356-610A-2E42-AF6D-2F8B9511B98E}
+      IID 5
+      NAME zebra_whinny_05.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F162CF9D-4A90-9244-8CF1-2E02224DA8EC}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/zebra_whinny_05.wav"
+      >
+    >
+  >
+  <TRACK {4AB1162C-3BAF-C64E-8B7A-3A54B4A348F1}
+    NAME zebra_whinny_06
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4AB1162C-3BAF-C64E-8B7A-3A54B4A348F1}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.71689583333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {97C6207E-22A4-5347-BB53-01D3C5DA0ABD}
+      IID 6
+      NAME zebra_whinny_06.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9D274273-D92F-0047-B8EE-94FA0BF88B8A}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/zebra_whinny_06.wav"
+      >
+    >
+  >
+  <TRACK {71B69CA1-C753-5A4A-B832-BA87E75E6059}
+    NAME zebra_whinny_07
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {71B69CA1-C753-5A4A-B832-BA87E75E6059}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {E6267395-0ECB-744B-BBD9-B7D02BF915C6}
+    NAME zebra_whinny_08
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {E6267395-0ECB-744B-BBD9-B7D02BF915C6}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.4316875
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AAABC0CD-A582-F54D-9BA7-D9A98BC75181}
+      IID 8
+      NAME zebra_whinny_08.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FFF346DE-59B0-A949-95D8-5F05355D861F}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/zebra_whinny_08.wav"
+      >
+    >
+  >
+  <TRACK {D0DEE7CD-86BE-B947-964F-6A5DF0DE3BB2}
+    NAME zebra_whinny_09
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D0DEE7CD-86BE-B947-964F-6A5DF0DE3BB2}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {6AFD71F7-C01C-AD44-9A6C-9EA2616C6A1B}
+    NAME zebra_whinny_10
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {6AFD71F7-C01C-AD44-9A6C-9EA2616C6A1B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {37E680BE-88FD-EF4D-B5E8-8F49E7426ED2}
+    NAME zebra_whinny_11
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {37E680BE-88FD-EF4D-B5E8-8F49E7426ED2}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {FAEF937B-CE07-B545-8BBE-1B6E4F793DE6}
+    NAME zebra_whinny_12
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {FAEF937B-CE07-B545-8BBE-1B6E4F793DE6}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {58591F00-26B0-DB4A-96F7-CF953C9FCFD0}
+    NAME horse_2_neigh_light_01
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 18 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {58591F00-26B0-DB4A-96F7-CF953C9FCFD0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0.4316875
+      SNAPOFFS 0
+      LENGTH 1.88707291666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AE1BFCC4-9DD8-A441-8E56-9CC285B3C2E0}
+      IID 36
+      NAME horse_2_neigh_light_01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6464284E-D084-BA43-90F5-04A921DD872B}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_light_01.wav"
+      >
+    >
+  >
+  <TRACK {EBFE228B-4E4F-534B-8500-A6BC71B61593}
+    NAME horse_2_neigh_light_02
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {EBFE228B-4E4F-534B-8500-A6BC71B61593}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.08078125
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {97BC72E4-B12F-FF46-955F-F8045037E904}
+      IID 37
+      NAME horse_2_neigh_light_02.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0203DADD-F30E-784C-8D5B-2E66219FD2FE}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_light_02.wav"
+      >
+    >
+  >
+  <TRACK {A6921889-853F-B448-B5C9-5ACCFFBEA799}
+    NAME horse_2_neigh_light_03
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.24114017177058 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A6921889-853F-B448-B5C9-5ACCFFBEA799}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.40658333333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2F98F4A3-DC84-4944-8059-834BAE376220}
+      IID 38
+      NAME horse_2_neigh_light_03.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {69DAE438-B2E4-9A4F-A7B6-7936C3410C17}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_light_03.wav"
+      >
+    >
+  >
+  <TRACK {92D8A933-6241-2D43-BAC4-6F9E76FFB5B4}
+    NAME horse_2_neigh_light_04
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {92D8A933-6241-2D43-BAC4-6F9E76FFB5B4}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.3
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2381EC34-7523-8A41-926F-333C24844B39}
+      IID 39
+      NAME horse_2_neigh_light_04.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {253D0514-4099-C746-8183-8BA8D9D088DE}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_light_04.wav"
+      >
+    >
+  >
+  <TRACK {FD8F50B0-D7F7-C241-8D44-73C174F39191}
+    NAME horse_2_neigh_light_05
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {FD8F50B0-D7F7-C241-8D44-73C174F39191}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.6
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B70E27C9-DE84-7743-96B1-6425BF73585E}
+      IID 40
+      NAME horse_2_neigh_light_05.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4C7F4288-66AB-754C-9AA7-11F84C055570}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_light_05.wav"
+      >
+    >
+  >
+  <TRACK {8C38E3CF-72D8-EC48-B2BD-7754C6F786B0}
+    NAME horse_2_neigh_light_06
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8C38E3CF-72D8-EC48-B2BD-7754C6F786B0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.00409375
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4216BF6E-C76E-4D42-88C6-280FD9CAC5C7}
+      IID 41
+      NAME horse_2_neigh_light_06.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EDDCAD26-587B-8D41-AAAF-EC5DFCB1ED49}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_light_06.wav"
+      >
+    >
+  >
+  <TRACK {85461B1E-CB75-104C-9E6C-C8C236463600}
+    NAME horse_2_neigh_med_01
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {85461B1E-CB75-104C-9E6C-C8C236463600}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.36
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2BAE4D59-3A4D-464D-8E61-62D9599B6EAC}
+      IID 42
+      NAME horse_2_neigh_med_01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {20511AD5-7E29-CB4E-9A94-F801790E8CEC}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_med_01.wav"
+      >
+    >
+  >
+  <TRACK {FBD7C15B-6BEA-1740-998F-1A2BC39D5083}
+    NAME horse_2_neigh_med_02
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {FBD7C15B-6BEA-1740-998F-1A2BC39D5083}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.51567708333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D8D6FF81-764C-4A4E-9848-84A3D3C36DC4}
+      IID 43
+      NAME horse_2_neigh_med_02.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DD3304AA-A520-EB43-94A3-FB82E1743869}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_med_02.wav"
+      >
+    >
+  >
+  <TRACK {8CB8DBD1-56BE-FF40-8289-B7C7B0F30807}
+    NAME horse_2_neigh_med_03
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8CB8DBD1-56BE-FF40-8289-B7C7B0F30807}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.72
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E372173E-611F-5241-BEC6-8FDDD916A25C}
+      IID 44
+      NAME horse_2_neigh_med_03.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9C793DD8-9350-1F44-93C7-D8A77BA335E2}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_med_03.wav"
+      >
+    >
+  >
+  <TRACK {26F0DE50-E052-094D-8AA3-2FD8DEB4F1D2}
+    NAME horse_2_neigh_med_04
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.16829929582119 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {26F0DE50-E052-094D-8AA3-2FD8DEB4F1D2}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.56857291666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E02351CD-C542-E543-9FBF-4C1232F9E5D9}
+      IID 45
+      NAME horse_2_neigh_med_04.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F610D12E-3E04-9443-A865-E6B6943F63F1}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_med_04.wav"
+      >
+    >
+  >
+  <TRACK {13C4B24B-4926-BD49-9463-23EF6F7EF6B0}
+    NAME horse_2_neigh_med_05
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {13C4B24B-4926-BD49-9463-23EF6F7EF6B0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 2.02842708333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C65AEBFC-4A95-5F43-BB4F-AC333E277339}
+      IID 46
+      NAME horse_2_neigh_med_05.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AFCAA5DC-86C6-AD47-B20F-A15626198C35}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_med_05.wav"
+      >
+    >
+  >
+  <TRACK {22047B35-F3B2-BF42-BA99-7F085D4DA510}
+    NAME horse_2_neigh_med_06
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {22047B35-F3B2-BF42-BA99-7F085D4DA510}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.34215625
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {54AB091E-BF50-0F4A-9D65-C988C5EFBC5F}
+      IID 47
+      NAME horse_2_neigh_med_06.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {169E80AC-0A86-604D-805A-5B10CE4CBFA2}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_med_06.wav"
+      >
+    >
+  >
+  <TRACK {A7D99156-9F5B-2B46-941C-9ECD2ADD8C93}
+    NAME horse_2_neigh_med_07
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A7D99156-9F5B-2B46-941C-9ECD2ADD8C93}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {FBCB9F0A-2742-6F4A-9009-6D872366A9B3}
+    NAME horse_2_neigh_strong_01
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {FBCB9F0A-2742-6F4A-9009-6D872366A9B3}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.9
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CE110D28-F608-6D44-B1EF-ED6DD3D96FC6}
+      IID 49
+      NAME horse_2_neigh_strong_01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1965D7F6-BA82-DC4A-B33F-14086005AFA6}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_strong_01.wav"
+      >
+    >
+  >
+  <TRACK {BAE347A8-3457-124C-A0ED-AF0DED439D5C}
+    NAME horse_2_neigh_strong_02
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BAE347A8-3457-124C-A0ED-AF0DED439D5C}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0.60982291666667
+      SNAPOFFS 0
+      LENGTH 1.87153125
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7D3DDDEA-D3D4-DC4F-9424-2FBDA062C67C}
+      IID 50
+      NAME horse_2_neigh_strong_02.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {045E8398-650F-834F-8E2D-1A35112B7A79}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_strong_02.wav"
+      >
+    >
+  >
+  <TRACK {D34B6698-7B1B-0B40-A188-9FCF9EB33EA5}
+    NAME horse_2_neigh_strong_03
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D34B6698-7B1B-0B40-A188-9FCF9EB33EA5}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0.60982291666667
+      SNAPOFFS 0
+      LENGTH 1.79429166666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {06AAED62-5F41-8B4A-9A13-5E2D9D2533E7}
+      IID 51
+      NAME horse_2_neigh_strong_03.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {165A6A12-9FE0-5449-8B8A-8561241B654B}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_strong_03.wav"
+      >
+    >
+  >
+  <TRACK {A68EC0B8-ED1C-D44B-8CE7-4848AE26B15F}
+    NAME horse_2_neigh_strong_04
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A68EC0B8-ED1C-D44B-8CE7-4848AE26B15F}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.4919375
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1B97C083-AC9A-FA4B-922A-E6D8A614E393}
+      IID 52
+      NAME horse_2_neigh_strong_04.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {11474DB0-4FE0-8A44-91E8-AB8C6079FD22}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_strong_04.wav"
+      >
+    >
+  >
+  <TRACK {1EC34472-5C9F-A648-9406-BDA8FF4D3BEF}
+    NAME horse_2_neigh_strong_05
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1EC34472-5C9F-A648-9406-BDA8FF4D3BEF}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.46922916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {EA3D8EAA-9365-D142-8789-FF81035CB931}
+      IID 53
+      NAME horse_2_neigh_strong_05.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {57CA82AF-19EB-F74B-ABD0-8B918B740DF5}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_strong_05.wav"
+      >
+    >
+  >
+  <TRACK {251E3B7E-6E8E-3E46-A771-BEF5D8D733E0}
+    NAME horse_2_neigh_strong_06
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {251E3B7E-6E8E-3E46-A771-BEF5D8D733E0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.36032291666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {FA860FA8-22C8-3D4F-ADB5-568F9447DF32}
+      IID 54
+      NAME horse_2_neigh_strong_06.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {71D184B3-1A91-064F-94D9-9112590B3DD5}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_strong_06.wav"
+      >
+    >
+  >
+  <TRACK {1967C6C5-2E2E-B741-9FD8-C296DAFCCA4A}
+    NAME horse_2_neigh_strong_07
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1967C6C5-2E2E-B741-9FD8-C296DAFCCA4A}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.26459375
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B949AD16-43F4-8642-90AA-E55023BE5CAA}
+      IID 55
+      NAME horse_2_neigh_strong_07.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4C3E5619-5E6C-FF4C-A934-B1FD94F43500}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_strong_07.wav"
+      >
+    >
+  >
+  <TRACK {6CFD5DED-3C0D-6F4E-BA2C-789CBE0C3D34}
+    NAME horse_2_neigh_whine_01
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.22495074449391 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {6CFD5DED-3C0D-6F4E-BA2C-789CBE0C3D34}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.46071875
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {64F0FC1B-D754-BC49-BD97-CD1F2D5EDA8A}
+      IID 56
+      NAME horse_2_neigh_whine_01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C97694A9-56EF-374D-B40D-A89D7C6EB6F5}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_whine_01.wav"
+      >
+    >
+  >
+  <TRACK {D49324F2-6A55-8D4D-89EC-CB41F0B79A26}
+    NAME horse_2_neigh_whine_02
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.60809580250146 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D49324F2-6A55-8D4D-89EC-CB41F0B79A26}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.19009375
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7D0FE515-8A84-504A-AFF8-03F39F768E78}
+      IID 57
+      NAME horse_2_neigh_whine_02.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2EDAFD16-1EFB-EA4C-8DB9-40371227C1E4}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_whine_02.wav"
+      >
+    >
+  >
+  <TRACK {26D66172-430C-E541-962E-65E000340E77}
+    NAME horse_2_neigh_whine_03
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.45583759840005 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {26D66172-430C-E541-962E-65E000340E77}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.60982291666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D19125E2-78FC-2A46-96D8-95EED2036CF5}
+      IID 58
+      NAME horse_2_neigh_whine_03.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {ED017B90-88D8-DB44-B7E2-A886D8327467}
+      <SOURCE WAVE
+        FILE "/Volumes/Sound & Music/Démo conception/Sound FX Library Fer/Gamemaster Audio - Pro Sound Collection v1.3 - 24bit 96k/Animal_Impersonations/horse_2_neigh_whine_03.wav"
+      >
+    >
+  >
+  <EXTENSIONS
+  >
+>

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Zebre
+  - Ane
+  - Licorne1
+  - Licorne2
+  - Cheval
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: "Arri\xE8rePlan"
+    uniqueID: 2424153585
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Milieu
+    uniqueID: 507578265
+    locked: 0
+  - name: AvantPlan
+    uniqueID: 3928980359
+    locked: 0
+  - name: Personnage
+    uniqueID: 1225122129
+    locked: 0
+  - name: Titre
+    uniqueID: 3576360161
+    locked: 0
