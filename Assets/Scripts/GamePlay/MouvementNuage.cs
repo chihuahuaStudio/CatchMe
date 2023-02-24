@@ -1,7 +1,8 @@
 /*
  * Code par Fernando Alexis Franco Murillo
  * Automne 2021
- * 
+ * Modifiée Fév 2023:
+ * Implémentation du Command Pattern et ajouts de méthode custom
  */
 
 using UnityEngine;

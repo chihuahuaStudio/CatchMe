@@ -1,5 +1,7 @@
-/*Code par Fernando Alexis Franco Murillo
+/*
+ * Code par Fernando Alexis Franco Murillo
  * Automne 2021
+ * Modifié Fév 2023 pour implementer le Command Pattern
  */
 
 using UnityEngine;
@@ -8,6 +10,7 @@ using UnityEngine.Serialization;
 public class Texte : MonoBehaviour
 {
     #region Déclaration des Variables
+    
     [FormerlySerializedAs("_vitesse")]
     [Tooltip("Vitesse de déplacement du texte")]
     [SerializeField] float vitesse;
@@ -44,7 +47,8 @@ public class Texte : MonoBehaviour
         _deplacementLettre = new Deplacement();
         monTransfo = gameObject.transform;
     }
-    // Update is called once per frame
+
+    
     void Update()
     {
         //Le temps en secondes arrondis
@@ -56,8 +60,6 @@ public class Texte : MonoBehaviour
             DeplacementLettre();
             // monTransfo.Translate(Vector3.up * (vitesse * Time.deltaTime));
             CheckYPosition();
-
-      
         }
     }
     

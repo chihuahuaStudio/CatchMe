@@ -1,7 +1,10 @@
-/*Code par Fernando Alexis Franco Murillo
+/*
+ * Code par Fernando Alexis Franco Murillo
  * Automne 2021
+ * Modifiée Fév 2023
  */
 
+using System;
 using UnityEngine;
 
 
@@ -18,13 +21,12 @@ public class ControlArrierePlan : MonoBehaviour
     #endregion
 
     #region Methode Mono
-    
-    void Start()
+
+    private void Awake()
     {
         _panel = GetComponent<SpriteRenderer>();
     }
-
-
+    
     void Update()
     {
         //Compteur
@@ -37,9 +39,12 @@ public class ControlArrierePlan : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Cette methode effectue un fade in du panel de bakground
+    /// </summary>
     private void ExecuteFade()
     {
-        //Changement de d'opacité pour la fin du film
+        //Changement d'opacité pour la fin du film
         _panel.color = new Color(1, 1, 1, _alpha += VITESSE_FADE * Time.deltaTime);
     }
 

@@ -1,13 +1,10 @@
-/***********************************************************************
+/*
 *Code par Fernando Alexis Franco Murillo
  * Automne 2021
  * 
- **********************************************************************
  */
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class DeplacementArrierePlan : MonoBehaviour
@@ -59,7 +56,6 @@ public class DeplacementArrierePlan : MonoBehaviour
 
     private void Awake()
     {
-        _persoTransfo = transform;
         _persoAnimator = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
 
@@ -67,6 +63,7 @@ public class DeplacementArrierePlan : MonoBehaviour
 
     void Start()
     {
+        _persoTransfo = transform;
         _posDepart = _persoTransfo.position; //position de départ
         _vitesseInitiale = _vitesse; //Vitesse de départ
         _delaiInitial = _delai; //délai du déplacement de départ
@@ -77,6 +74,8 @@ public class DeplacementArrierePlan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _time = Mathf.Round(Time.time);
+
         Deplacement();
     }
 
@@ -90,7 +89,6 @@ public class DeplacementArrierePlan : MonoBehaviour
     /// </summary>
     private void Deplacement()
     {
-        _time = Mathf.Round(Time.time);
 
         //condition pour le premier déplacement
         if (Time.time >= _delai)
@@ -109,14 +107,7 @@ public class DeplacementArrierePlan : MonoBehaviour
             //condition d'arret
             if (_pos.x <= _limiteX)
             {
-                _nmbrDeplacement++;
-                _persoTransfo.position = _posDepart;
-                _vitesse = ZERO;
-                _delai += Time.time;
-                _çaJoue = false;
-                _delaiSon += Time.time;
-                _persoAnimator.enabled = false;
-
+                RetourPositionInitiale();
             }
         }
 
@@ -127,11 +118,13 @@ public class DeplacementArrierePlan : MonoBehaviour
             _delai = _delaiInitial;
             _persoAnimator.enabled = true; ;
         }
+        
         //Calcule délai son
         if (Time.time >= _delaiSon)
         {
             _delaiSon = _delaiSonInitial;
         }
+        
         //calcule limite déplacement
         if (_nmbrDeplacement >= _limiteDeplacement)
         {
@@ -139,6 +132,7 @@ public class DeplacementArrierePlan : MonoBehaviour
             _persoAnimator.enabled = false;
             _çaJoue = true;
         }
+        
     }
 
     #endregion
@@ -150,7 +144,18 @@ public class DeplacementArrierePlan : MonoBehaviour
     /// </summary>
     private void DeclenchementSon()
     {
-        _audioSource.Play();
+        _audioSource.Play(); // ajouter une classe pour le son
+    }
+
+    private void RetourPositionInitiale()
+    {
+        _nmbrDeplacement++;
+        _persoTransfo.position = _posDepart;
+        _vitesse = ZERO;
+        _delai += Time.time;
+        _çaJoue = false; //ajouter une autre classe pour le son
+        _delaiSon += Time.time; //ajouter une autre classe pour le son
+        _persoAnimator.enabled = false;
     }
 
     #endregion

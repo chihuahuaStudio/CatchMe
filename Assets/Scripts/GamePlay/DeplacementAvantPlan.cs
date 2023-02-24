@@ -1,40 +1,48 @@
 /*Code par Fernando Alexis Franco Murillo
  * Automne 2021
  */
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class DeplacementAvantPlan : MonoBehaviour
 {
     #region Déclarations des Variables
 
+    [FormerlySerializedAs("_vitesse")]
     [Header("Paramètres")]
     [Tooltip("Vitesse de Déplacement du Personnage")]
-    [SerializeField] float _vitesse = 5.0f;
+    [SerializeField] float vitesse = 5.0f;
 
+    [FormerlySerializedAs("_limiteX")]
     [Tooltip("Limite Déplacement X")]
-    [SerializeField] float _limiteX;
+    [SerializeField] float limiteX;
 
+    [FormerlySerializedAs("_limiteDeplacement")]
     [Tooltip("Limite de déplacement avant disparaître")]
-    [SerializeField] int _limiteDeplacement;
+    [SerializeField] int limiteDeplacement;
 
+    [FormerlySerializedAs("_delai")]
     [Tooltip("Delai de Départ")]
-    [SerializeField] float _delai;
+    [SerializeField] float delai;
 
+    [FormerlySerializedAs("_delaiSon")]
     [Tooltip("Delai des déclenchement des son")]
-    [SerializeField] float _delaiSon;
+    [SerializeField] float delaiSon;
 
+    [FormerlySerializedAs("_time")]
     [Header("Référence Seulement")]
     [Tooltip("Affichage du temps écoulé depuis le début du programme")]
-    [SerializeField] float _time;
+    [SerializeField] float time;
 
+    [FormerlySerializedAs("_nmbrDeplacement")]
     [Tooltip("Nombre de déplacement")]
-    [SerializeField] int _nmbrDeplacement = 0;
+    [SerializeField] int nmbrDeplacement;
 
+    [FormerlySerializedAs("_çaJoue")]
     [Tooltip("Est-ce que le son joue présentement")]
-    [SerializeField] bool _çaJoue = false;
+    [SerializeField] bool çaJoue;
 
     private AudioClip cris;
     private Animator _persoAnimator;
@@ -63,15 +71,15 @@ public class DeplacementAvantPlan : MonoBehaviour
     void Start()
     {
         _posDepart = _persoTransfo.position;
-        _vitesseInitial = _vitesse;
-        _delaiInitial = _delai;
-        _delaiSonInitial = _delaiSon;
+        _vitesseInitial = vitesse;
+        _delaiInitial = delai;
+        _delaiSonInitial = delaiSon;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _time = Time.time;
+        time = Time.time;
         CalculeDeplacement();
     }
 
@@ -85,46 +93,46 @@ public class DeplacementAvantPlan : MonoBehaviour
     private void CalculeDeplacement()
     {
         _pos = _persoTransfo.position;
-        _persoTransfo.Translate(Vector3.right * _vitesse * Time.deltaTime);
+        _persoTransfo.Translate(Vector3.right * (vitesse * Time.deltaTime));
 
         //Condition pour éviter que le son soit déclencher à chaque boucle
-        if (!_çaJoue && Time.time >= _delaiSon)
+        if (!çaJoue && Time.time >= delaiSon)
         {
-            _çaJoue = true;
+            çaJoue = true;
             DeclenchementSon();
         }
 
         //Si à la limite du déplacement
-        if (_pos.x >= _limiteX)
+        if (_pos.x >= limiteX)
         {
-            _nmbrDeplacement++;
-            _delai += Time.time;
+            nmbrDeplacement++;
+            delai += Time.time;
             _persoTransfo.position = _posDepart;
-            _vitesse = ZERO;
-            _çaJoue = false;
-            _delaiSon += Time.time + _delaiInitial;
+            vitesse = ZERO;
+            çaJoue = false;
+            delaiSon += Time.time + _delaiInitial;
             _persoAnimator.enabled = false;
 
         }
 
-        if (Time.time >= _delai)
+        if (Time.time >= delai)
         {
             _persoAnimator.enabled = true;
             
-            _vitesse = _vitesseInitial;
-            _delai = _delaiInitial;
-            _persoAnimator.enabled = true;
+            vitesse = _vitesseInitial;
+            delai = _delaiInitial;
+            // _persoAnimator.enabled = true;
         }
 
-        if(Time.time >= _delaiSon)
+        if(Time.time >= delaiSon)
         {
-            _delaiSon = _delaiSonInitial;
+            delaiSon = _delaiSonInitial;
         }
 
-        if (_nmbrDeplacement >= _limiteDeplacement)
+        if (nmbrDeplacement >= limiteDeplacement)
         {
-            _çaJoue = true;
-            _vitesse = ZERO;
+            çaJoue = true;
+            vitesse = ZERO;
             _persoAnimator.enabled = false;
         }
 
@@ -139,7 +147,7 @@ public class DeplacementAvantPlan : MonoBehaviour
     {
         _audioSource.Play();
 
-        if(tag == "Player")
+        if(CompareTag("Player"))
         {
             CrisPersonnage.Instance.Cris();
         }
