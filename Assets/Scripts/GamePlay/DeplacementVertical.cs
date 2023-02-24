@@ -1,61 +1,85 @@
-/*Code par Fernando Alexis Franco Murillo
+/*
+ * Code par Fernando Alexis Franco Murillo
  * Automne 2021
+ * This script was mmodified Feb 23 2023
+ * I implemented the Command Pattern without the undo function
  */
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class DeplacementVertical : MonoBehaviour
 {
     #region Déclarations des variables
-
+    
     [Header("Paramètre du contrôleur")]
     [Tooltip("Vitesse de déplacement")]
-    [SerializeField] float _vitesse;
-
-    [Tooltip("Temps écoulé depuis le début de l'application")]
-    [SerializeField] float _time;
-
+    [SerializeField] float vitesse;
+    
     [Tooltip("Délai avant le début du déplacement")]
-    [SerializeField] float _delai;
-
+    [SerializeField] float delai;
+    
     [Tooltip("Limite du déplacement vertical")]
-    [SerializeField] float _limiteY;
-
+    [SerializeField] float limiteY;
+    
+    //private variables
     private Animator persoAnimator;
-    private const float Vitesse_Null = 0.0f;
+    private const float VITESSE_NULL = 0.0f;
+    private Transform _transform;
+    
+    //Command Pattern Objects
+    private Deplacement _deplacementVertical;
 
     #endregion
 
-    #region Méthode Mono
+    #region Mono
 
     private void Awake()
     {
         persoAnimator = GetComponent<Animator>();
-    }
+        _deplacementVertical = new Deplacement();
 
-    // Start is called before the first frame update
+    }
+    
+    
     void Start()
     {
+        _transform = transform;
         persoAnimator.enabled = false;
         
     }
-
-    // Update is called once per frame
+    
+    
     void Update()
     {
-        _time = Mathf.Round(Time.time);
-
-        if(Time.time >= _delai)
+        
+        if(Time.time >= delai)
         {
-            transform.Translate(Vector3.up * _vitesse * Time.deltaTime);
+            TranslationVertical();
+            CheckYPosition();
+        }
+    }
 
-            if(transform.position.y >= _limiteY)
-            {
-                _vitesse = Vitesse_Null;
-              
-            }
+    #endregion
 
+
+    #region Custom methods
+
+    private void TranslationVertical()
+    {
+        // transform.Translate(Vector3.up * (vitesse * Time.deltaTime));
+        _deplacementVertical.Execute(_transform, Vector3.up, vitesse);
+
+    }
+
+    #endregion
+
+    #region Custom Methods
+
+    private void CheckYPosition()
+    {
+        if(transform.position.y >= limiteY)
+        {
+            vitesse = VITESSE_NULL;
         }
     }
 

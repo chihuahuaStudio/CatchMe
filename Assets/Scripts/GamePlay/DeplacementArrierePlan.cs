@@ -1,6 +1,10 @@
-/*Code par Fernando Alexis Franco Murillo
+/***********************************************************************
+*Code par Fernando Alexis Franco Murillo
  * Automne 2021
+ * 
+ **********************************************************************
  */
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -60,7 +64,7 @@ public class DeplacementArrierePlan : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
 
     }
-    // Start is called before the first frame update
+
     void Start()
     {
         _posDepart = _persoTransfo.position; //position de départ
@@ -92,7 +96,8 @@ public class DeplacementArrierePlan : MonoBehaviour
         if (Time.time >= _delai)
         {
             _pos = _persoTransfo.position;
-            _persoTransfo.Translate(Vector3.right * _vitesse * Time.deltaTime);
+            _persoTransfo.Translate(Vector3.right 
+                                    * (_vitesse * Time.deltaTime));
 
             //Condition pour éviter un son en boucle dans update
             if (!_çaJoue && Time.time >= _delaiSon)
