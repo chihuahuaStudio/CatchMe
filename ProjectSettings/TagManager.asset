@@ -9,6 +9,7 @@ TagManager:
   - Licorne1
   - Licorne2
   - Cheval
+  - TriggerSon
   layers:
   - Default
   - TransparentFX

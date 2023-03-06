@@ -4,6 +4,7 @@
  * Modifié Fév 2023 pour implementer le Command Pattern
  */
 
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -28,7 +29,6 @@ public class Texte : MonoBehaviour
     [SerializeField] float limiteY;
 
     //Variables privées
-    private const float VITESSE_NULL = 0.0f;
     private const float SCALE_AUGM = 0.01f;
     private float _scaleX = 1.0f;
     private float _scaleY = 1.0f;
@@ -48,7 +48,11 @@ public class Texte : MonoBehaviour
         monTransfo = gameObject.transform;
     }
 
-    
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
     void Update()
     {
         //Le temps en secondes arrondis
@@ -57,29 +61,19 @@ public class Texte : MonoBehaviour
         //condition du déplacement du texte
         if(time >= delai)
         {
-            DeplacementLettre();
-            // monTransfo.Translate(Vector3.up * (vitesse * Time.deltaTime));
-            CheckYPosition();
+            AgrandissementLettre();
+            _deplacementLettre.Execute(monTransfo, Vector3.up, vitesse);
+
         }
     }
     
     #endregion
 
     #region Custom methods
-
-
-    private void CheckYPosition()
-    {
-        if(monTransfo.position.y >= limiteY)
-        {
-            vitesse = VITESSE_NULL;
-        }
-    }
-
-    private void DeplacementLettre()
+    
+    private void AgrandissementLettre()
     {
         monTransfo.localScale = new Vector2(_scaleX += SCALE_AUGM, _scaleY += SCALE_AUGM );
-        _deplacementLettre.Execute(monTransfo, Vector3.up, vitesse);
     }
 
     #endregion

@@ -1,17 +1,22 @@
-/*Code par Fernando Alexis Franco Murillo
+/*
+ * Code par Fernando Alexis Franco Murillo
  * Automne 2021
+ * Modifiée en Fév 2023
  */
-using System.Collections;
-using System.Collections.Generic;
+
+
 using UnityEngine;
 
+/// <summary>
+/// Cette méthode effectue la rotation de 
+/// </summary>
 public class RotationMoulin : MonoBehaviour
 {
 
     #region Déclaration des Variables
 
-    private const float VITESSE_DE_ROTATION = -80;
-    private Transform monTransfo;
+    private const float VITESSE_DE_ROTATION = -100;
+    private Transform moulinTransform;
 
     #endregion
 
@@ -20,20 +25,24 @@ public class RotationMoulin : MonoBehaviour
     private void Awake()
     {
      
-        monTransfo = gameObject.transform;
+        moulinTransform = transform;
+    }
+    
+    
+    private void Update()
+    {
+        MoulinRotation();
     }
 
-    private void Start()
+    /// <summary>
+    /// Cette méthode créer la rotation du moulin
+    /// </summary>
+    private void MoulinRotation()
     {
+        moulinTransform.Rotate(Vector3.forward * (VITESSE_DE_ROTATION * Time.deltaTime), Space.World);   
         
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-        monTransfo.Rotate(Vector3.forward * VITESSE_DE_ROTATION *Time.deltaTime, Space.World);   
-    }
-
+    
     #endregion
 
 }

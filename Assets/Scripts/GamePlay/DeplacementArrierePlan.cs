@@ -6,36 +6,46 @@
 
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class DeplacementArrierePlan : MonoBehaviour
 {
     #region Déclarations des Variables
 
+    [FormerlySerializedAs("_vitesse")]
     [Header("Paramètre de Déplacement")]
     [Tooltip("Vitesse de déplacement")]
-    [SerializeField] float _vitesse;
+    [SerializeField] float vitesse;
 
+    [FormerlySerializedAs("_limiteX")]
     [Tooltip("Limite déplcement X")]
-    [SerializeField] float _limiteX;
+    [SerializeField] float limiteX;
 
+    [FormerlySerializedAs("_limiteDeplacement")]
     [Tooltip("Limite de déplacement avant disparaître")]
-    [SerializeField] int _limiteDeplacement;
+    [SerializeField] int limiteDeplacement;
 
+    [FormerlySerializedAs("delai")]
+    [FormerlySerializedAs("_delai")]
     [Tooltip("Delai de départ")]
-    [SerializeField] float _delai;
+    [SerializeField] float delaiDeplacement;
 
+    [FormerlySerializedAs("_delaiSon")]
     [Tooltip("Delai de déclenchement des sons")]
-    [SerializeField] float _delaiSon;
+    [SerializeField] float delaiSon;
 
+    [FormerlySerializedAs("_time")]
     [Header("Référence Seulementt")]
     [Tooltip("Affichage du temps écoulé depuis le début du programme")]
-    [SerializeField] float _time;
+    [SerializeField] float time;
 
+    [FormerlySerializedAs("_nmbrDeplacement")]
     [Tooltip("Nombre de déplacement")]
-    [SerializeField] int _nmbrDeplacement = 0;
+    [SerializeField] int nmbrDeplacement = 0;
 
+    [FormerlySerializedAs("_çaJoue")]
     [Tooltip("Est-ce que le son joue?")]
-    [SerializeField] bool _çaJoue = false;
+    [SerializeField] bool çaJoue = false;
 
     //Référence des composants
     private AudioSource _audioSource;
@@ -56,6 +66,7 @@ public class DeplacementArrierePlan : MonoBehaviour
 
     private void Awake()
     {
+        _persoTransfo = transform;
         _persoAnimator = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
 
@@ -63,18 +74,17 @@ public class DeplacementArrierePlan : MonoBehaviour
 
     void Start()
     {
-        _persoTransfo = transform;
         _posDepart = _persoTransfo.position; //position de départ
-        _vitesseInitiale = _vitesse; //Vitesse de départ
-        _delaiInitial = _delai; //délai du déplacement de départ
-        _delaiSonInitial = _delaiSon; //délai de déclenchement sonore
+        _vitesseInitiale = vitesse; //Vitesse de départ
+        _delaiInitial = delaiDeplacement; //délai du déplacement de départ
+     
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        _time = Mathf.Round(Time.time);
+        time = Mathf.Round(Time.time);
 
         Deplacement();
     }
@@ -90,47 +100,38 @@ public class DeplacementArrierePlan : MonoBehaviour
     private void Deplacement()
     {
 
-        //condition pour le premier déplacement
-        if (Time.time >= _delai)
+        //condition pour chaque  déplacement
+        if (Time.time >= delaiDeplacement)
         {
-            _pos = _persoTransfo.position;
+            vitesse = _vitesseInitiale;
+            // _persoAnimator.enabled = true; ;
             _persoTransfo.Translate(Vector3.right 
-                                    * (_vitesse * Time.deltaTime));
+                                    * (vitesse * Time.deltaTime));
+            _pos = _persoTransfo.position;
+            delaiDeplacement = _delaiInitial;
 
-            //Condition pour éviter un son en boucle dans update
-            if (!_çaJoue && Time.time >= _delaiSon)
-            {
-                _çaJoue = true;
-                DeclenchementSon();
-            }
-
+            
             //condition d'arret
-            if (_pos.x <= _limiteX)
+            if (_pos.x <= limiteX)
             {
+                nmbrDeplacement++;
+                vitesse = ZERO;
                 RetourPositionInitiale();
             }
-        }
-
-        //calcule délai déplacement
-        if (Time.time >= _delai)
-        {
-            _vitesse = _vitesseInitiale;
-            _delai = _delaiInitial;
-            _persoAnimator.enabled = true; ;
+            
         }
         
-        //Calcule délai son
-        if (Time.time >= _delaiSon)
-        {
-            _delaiSon = _delaiSonInitial;
-        }
+
+
+
         
         //calcule limite déplacement
-        if (_nmbrDeplacement >= _limiteDeplacement)
+        if (nmbrDeplacement >= limiteDeplacement)
         {
-            _vitesse = ZERO;
-            _persoAnimator.enabled = false;
-            _çaJoue = true;
+            Destroy(gameObject);
+            // _vitesse = ZERO;
+            // _persoAnimator.enabled = false;
+            // _çaJoue = true;
         }
         
     }
@@ -138,25 +139,20 @@ public class DeplacementArrierePlan : MonoBehaviour
     #endregion
 
     #region Audio
-
-    /// <summary>
-    /// Foncition pour le déclenchement des sons.
-    /// </summary>
-    private void DeclenchementSon()
-    {
-        _audioSource.Play(); // ajouter une classe pour le son
-    }
-
+    
     private void RetourPositionInitiale()
     {
-        _nmbrDeplacement++;
         _persoTransfo.position = _posDepart;
-        _vitesse = ZERO;
-        _delai += Time.time;
-        _çaJoue = false; //ajouter une autre classe pour le son
-        _delaiSon += Time.time; //ajouter une autre classe pour le son
-        _persoAnimator.enabled = false;
+        ResetTimerDeplacement();
+        çaJoue = false; //ajouter une autre classe pour le son
+        // _persoAnimator.enabled = false;
+    }
+
+    private void ResetTimerDeplacement()
+    {
+        delaiDeplacement += Time.time;
     }
 
     #endregion
+    
 }

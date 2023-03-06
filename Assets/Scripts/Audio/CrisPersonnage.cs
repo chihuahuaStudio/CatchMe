@@ -1,23 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
+
+
 using UnityEngine;
 
 public class CrisPersonnage : MonoBehaviour
 {
-    public static CrisPersonnage Instance { get; private set; }
-
-    [SerializeField] AudioSource monAs;
-    [SerializeField] AudioClip monClip;
+    private AudioSource monAs;
+    
     public void Awake()
     {
-        if(Instance != null)
-        {
-            Destroy(gameObject);
-        }
-        Instance = this;
+        monAs = GetComponent<AudioSource>();
     }
-    public void Cris()
+
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        monAs.PlayOneShot(monClip, 1.0f);
+        if (col.gameObject.CompareTag("TriggerSon"))
+        {
+            DeclencheCrisPersonnage();
+            GameEvents.RaisePersonnageTraverseColliderAction();
+        }
+            
     }
+
+    private void DeclencheCrisPersonnage()
+    {
+        monAs.Play();
+    }
+
 }

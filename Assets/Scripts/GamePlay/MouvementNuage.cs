@@ -41,12 +41,14 @@ public class MouvementNuage : MonoBehaviour
     {
         PositionAleatoire();
        VitesseAleatoire();
+       InvokeRepeating("DeplacementNuages", 
+           0.0f, 0.05f);
     }
 
 
     void Update()
     {
-        DeplacementNuages();   
+        // DeplacementNuages();   
     }
 
     #endregion
