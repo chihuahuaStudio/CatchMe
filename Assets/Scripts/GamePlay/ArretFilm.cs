@@ -3,7 +3,6 @@
  * Automne 2021
  */
 
-
 using UnityEngine;
 
 #if UNITY_EDITOR
@@ -15,16 +14,16 @@ public class ArretFilm : MonoBehaviour
     #region Fin du Film
     private const float DELAI = 74.0f;
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        //Condition pour l'arrêt de l'animation.
-        if(Time.time >= DELAI)
-        {
-            Arret(); //Methode qui arrête l'animation
-        }
-        
+        GameEvents.EndOfFilm += Arret;
     }
+
+    private void OnDisable()
+    {
+        GameEvents.EndOfFilm -= Arret;
+    }
+
 
     /// <summary>
     /// Methode qui déclenche l'arrêt du film en mode Editor et en mode Play.
@@ -37,8 +36,6 @@ public class ArretFilm : MonoBehaviour
 #else
         Application.Quit();
 #endif
-
-
     }
 
     #endregion

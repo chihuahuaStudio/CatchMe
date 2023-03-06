@@ -18,12 +18,12 @@ public class SpeechBox : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEvents._personnageTraverseCollider += ActivateSpeechBubble;
+        GameEvents.PersonnageTraverseCollider += ActivateSpeechBubble;
     }
 
     private void OnDisable()
     {
-        GameEvents._personnageTraverseCollider -= ActivateSpeechBubble;
+        GameEvents.PersonnageTraverseCollider -= ActivateSpeechBubble;
     }
 
 

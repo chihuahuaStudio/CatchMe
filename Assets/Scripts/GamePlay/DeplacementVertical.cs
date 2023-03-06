@@ -5,6 +5,7 @@
  * I implemented the Command Pattern without the undo function
  */
 
+using System;
 using UnityEngine;
 
 public class DeplacementVertical : MonoBehaviour
@@ -15,15 +16,11 @@ public class DeplacementVertical : MonoBehaviour
     [Tooltip("Vitesse de déplacement")]
     [SerializeField] float vitesse;
     
-    [Tooltip("Délai avant le début du déplacement")]
-    [SerializeField] float delai;
-    
     [Tooltip("Limite du déplacement vertical")]
     [SerializeField] float limiteY;
     
     //private variables
     private Animator persoAnimator;
-    private const float VITESSE_NULL = 0.0f;
     private Transform _transform;
     
     //Command Pattern Objects
@@ -39,26 +36,19 @@ public class DeplacementVertical : MonoBehaviour
         _deplacementVertical = new Deplacement();
 
     }
-    
-    
+
+    private void OnEnable()
+    {
+        GameEvents.CommenceDeplacementVertical += TranslationVertical;
+    }
+
     void Start()
     {
         _transform = transform;
         persoAnimator.enabled = false;
-        
     }
     
     
-    void Update()
-    {
-        
-        if(Time.time >= delai)
-        {
-            TranslationVertical();
-            CheckYPosition();
-        }
-    }
-
     #endregion
 
 
@@ -66,21 +56,8 @@ public class DeplacementVertical : MonoBehaviour
 
     private void TranslationVertical()
     {
-        // transform.Translate(Vector3.up * (vitesse * Time.deltaTime));
-        _deplacementVertical.Execute(_transform, Vector3.up, vitesse);
-
-    }
-
-    #endregion
-
-    #region Custom Methods
-
-    private void CheckYPosition()
-    {
-        if(transform.position.y >= limiteY)
-        {
-            vitesse = VITESSE_NULL;
-        }
+        if(_transform.position.y <= limiteY)
+         _deplacementVertical.Execute(_transform, Vector3.up, vitesse);
     }
 
     #endregion
