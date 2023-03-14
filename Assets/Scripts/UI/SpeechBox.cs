@@ -1,43 +1,51 @@
 
-using System;
+using CoreDesign;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SpeechBox : MonoBehaviour
+namespace CatchMeIfYouCan.UI
 {
-    [SerializeField] private Transform playerTransform;
-
-    private RectTransform speechTranform;
-    private Image speechImage;
-
-    private void Awake()
+    
+    /// <summary>
+    /// Cette classe gère le comportement du speech box
+    /// </summary>
+    public class SpeechBox : MonoBehaviour
     {
-        speechTranform = GetComponent<RectTransform>();
-        speechImage = GetComponent<Image>();
-    }
+        [SerializeField] private Transform playerTransform;
 
-    private void OnEnable()
-    {
-        GameEvents.PersonnageTraverseCollider += ActivateSpeechBubble;
-    }
+        private RectTransform speechTranform;
+        private Image speechImage;
+        
 
-    private void OnDisable()
-    {
-        GameEvents.PersonnageTraverseCollider -= ActivateSpeechBubble;
-    }
+        private void Awake()
+        {
+            speechTranform = GetComponent<RectTransform>();
+            speechImage = GetComponent<Image>();
+        }
+
+        private void OnEnable()
+        {
+            GameEvents.PersonnageTraverseCollider += ActivateSpeechBubble;
+        }
+
+        private void OnDisable()
+        {
+            GameEvents.PersonnageTraverseCollider -= ActivateSpeechBubble;
+        }
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        speechTranform.position = playerTransform.position;
-    }
+        // Update is called once per frame
+        void Update()
+        {
+            speechTranform.position = playerTransform.position;
+        }
 
-    private void ActivateSpeechBubble()
-    {
-        speechImage.color = new Color(speechImage.color.r, speechImage.color.g,
-        speechImage.color.b,1.0f);
-    }
+        private void ActivateSpeechBubble()
+        {
+            speechImage.color = new Color(speechImage.color.r, speechImage.color.g,
+                speechImage.color.b,1.0f);
+        }
     
     
+    }
 }

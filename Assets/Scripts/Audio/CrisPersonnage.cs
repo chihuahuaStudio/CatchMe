@@ -1,29 +1,35 @@
 
-
+using CoreDesign;
 using UnityEngine;
 
-public class CrisPersonnage : MonoBehaviour
+namespace CatchMeIfYouCan.Audio
 {
-    private AudioSource monAs;
+    /// <summary>
+    /// Cette classe detecte la collision entre les personnages et le trigger du son
+    /// </summary>
+    public class CrisPersonnage : MonoBehaviour
+    {
+        private AudioSource monAs;
     
-    public void Awake()
-    {
-        monAs = GetComponent<AudioSource>();
-    }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag("TriggerSon"))
+        public void Awake()
         {
-            DeclencheCrisPersonnage();
-            GameEvents.RaisePersonnageTraverseColliderAction();
+            monAs = GetComponent<AudioSource>();
         }
-            
-    }
 
-    private void DeclencheCrisPersonnage()
-    {
-        monAs.Play();
-    }
+        private void OnEnable()
+        {
+            GameEvents.PersonnageTraverseCollider += DeclencheCrisPersonnage;
+        }
 
+        private void OnDisable()
+        {
+            GameEvents.PersonnageTraverseCollider -= DeclencheCrisPersonnage;
+        }
+
+        private void DeclencheCrisPersonnage()
+        {
+            monAs.Play();
+        }
+
+    }
 }
