@@ -7,6 +7,7 @@ namespace CoreDesign
         public static Action PersonnageTraverseCollider { get; set; }
         public static Action PersonnageArriveLimiteDeplacement { get; set; }
         public static Action PersonnageRetourPositionInitiale { get; set; }
+        public static Action NombreMaximumDeplacementAtteint { get; set; }
         public static Action CommenceDeplacementVertical { get; set; }
         public static Action EndOfFilm { get; set; }
         public static Action BackgroundFade { get; set; }
@@ -41,6 +42,11 @@ namespace CoreDesign
         public static void RaisePersonnageRetourPositionInitiale()
         {
             PersonnageRetourPositionInitiale?.Invoke();
+        }
+
+        public static void RaiseNombreMaximumDeplacementAtteint()
+        {
+            NombreMaximumDeplacementAtteint?.Invoke();
         }
     }
 }
