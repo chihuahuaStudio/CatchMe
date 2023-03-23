@@ -1,6 +1,6 @@
 
-using CoreDesign;
 using UnityEngine;
+
 
 namespace GamePlay.Personnages
 {
@@ -9,12 +9,15 @@ namespace GamePlay.Personnages
 
         [Header("Parametres du Deplacement")] 
         [SerializeField] private float limiteDeplacementX;
-        
         [SerializeField] private int nombreMaxDeplacement;
-        public int NombreMaxDeplacement => nombreMaxDeplacement;
+        [SerializeField] private int nombreDeplacementEffectue;
+        [SerializeField] private bool estEnArret;
+        public bool EstEnArret
+        {
+            get => estEnArret;
+            set => estEnArret = value;
+        }
 
-        [SerializeField] private int _nombreDeplacementEffectue;
-        public int NombreDeplacementEffectue => _nombreDeplacementEffectue;
 
         private Transform _transform;
 
@@ -23,29 +26,23 @@ namespace GamePlay.Personnages
             _transform = transform;
         }
 
-        private void OnEnable()
-        {
-            GameEvents.PersonnageArriveLimiteDeplacement += CalculeNombreDeplacement;
-        }
-        
-        private void OnDisable()
-        {
-            GameEvents.PersonnageArriveLimiteDeplacement -= CalculeNombreDeplacement;
-        }
-
-
-    
         void Update()
         {
             if (_transform.position.x >= limiteDeplacementX)
             {
-                GameEvents.RaisePersonageArriveLimiteDeplacement();
+                CalculeNombreDeplacement();
+                estEnArret = true;
             }
+            if (nombreDeplacementEffectue >= nombreMaxDeplacement)
+                DesactivePersonnage();
         }
 
         private void CalculeNombreDeplacement()
         {
-            _nombreDeplacementEffectue++;
+            nombreDeplacementEffectue++;
         }
+
+        private void DesactivePersonnage() => gameObject.SetActive(false);
+
     }
 }

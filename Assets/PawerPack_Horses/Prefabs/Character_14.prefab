@@ -431,11 +431,8 @@ GameObject:
   - component: {fileID: 4000012735532034}
   - component: {fileID: 212000010115293714}
   - component: {fileID: 95000013941187434}
-  - component: {fileID: 1166467741}
   - component: {fileID: 1166467740}
   - component: {fileID: 1166467744}
-  - component: {fileID: 1166467745}
-  - component: {fileID: 7527918730066480816}
   - component: {fileID: 1166467751}
   - component: {fileID: 1166467752}
   m_Layer: 0
@@ -539,102 +536,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!82 &1166467741
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013651748482}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6230591733768534672, guid: a6b37dcd0683f4aedb1b6a81c8508a40, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 4d349652ff8eb41e7a67ba116e115783, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0.13
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &1166467740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,10 +549,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeDeplacement: 0
-  vitesse: 5
-  delai: 9
+  vitesseDeplacement: 5
+  delaiProchainDeplacement: 9
   time: 0
-  nmbrDeplacement: 0
 --- !u!61 &1166467744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -678,30 +578,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.8486419, y: 7.7219973}
   m_EdgeRadius: 0
---- !u!114 &1166467745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013651748482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cdf7c1030cf48a3bce62f117b07de9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7527918730066480816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013651748482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e1757d98f5604d458e1e07a47d80705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1166467751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,7 +592,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   limiteDeplacementX: 21
   nombreMaxDeplacement: 1
-  _nombreDeplacementEffectue: 0
+  nombreDeplacementEffectue: 0
+  estEnArret: 0
 --- !u!114 &1166467752
 MonoBehaviour:
   m_ObjectHideFlags: 0

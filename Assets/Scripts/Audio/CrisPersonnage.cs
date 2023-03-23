@@ -9,7 +9,9 @@ namespace CatchMeIfYouCan.Audio
     /// </summary>
     public class CrisPersonnage : MonoBehaviour
     {
+        [SerializeField] private AudioClip audioClip;
         private AudioSource monAs;
+        
     
         public void Awake()
         {
@@ -28,7 +30,7 @@ namespace CatchMeIfYouCan.Audio
 
         private void DeclencheCrisPersonnage()
         {
-            monAs.Play();
+            monAs.PlayOneShot(audioClip, 1.0f);
         }
 
     }

@@ -21,9 +21,10 @@ namespace GamePlay.Controle
         
             if(timer >= timerArretFilm)
                 GameEvents.RaiseEndOfFilmAction();
-        
+            
             if(timer >= debutDeplacementVertical)
                 GameEvents.RaiseCommenceDeplacementVerticalAction();
+            
             if (timer >= backgoundFade)
                 GameEvents.RaiseBackgroundFadeAction();
         }
