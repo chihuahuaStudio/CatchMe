@@ -25,12 +25,12 @@ namespace CatchMeIfYouCan.UI
 
         private void OnEnable()
         {
-            GameEvents.PersonnageTraverseCollider += ActivateSpeechBubble;
+            GameEvents.PersonnageTraverseColliderSon += ActivateSpeechBubble;
         }
 
         private void OnDisable()
         {
-            GameEvents.PersonnageTraverseCollider -= ActivateSpeechBubble;
+            GameEvents.PersonnageTraverseColliderSon -= ActivateSpeechBubble;
         }
 
 

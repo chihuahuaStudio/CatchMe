@@ -26,7 +26,7 @@ namespace GamePlay.Personnages
         [Tooltip("Affichage du temps écoulé depuis le début du programme")]
         [SerializeField] float time;
         
-        //Private fields
+        //Fields privée
         private Animator _persoAnimator;
         private Transform _transform;
         private Vector3 _posDepart;
@@ -65,20 +65,20 @@ namespace GamePlay.Personnages
 
         void Update()
         {
-            time = Time.time;
+            // time = Time.time;
 
-            if (_calculeDeplacement.EstEnArret)
-            {
-              ArretPersonnage();
-              UpdateTimer();
-            }
+            // if (_calculeDeplacement.EstEnArret)
+            // {
+            //   ArretPersonnage();
+            //   UpdateTimer();
+            // }
      
             Deplacement(directionPersonnage);
             
-            if (Time.time >= delaiProchainDeplacement)
-            {
-                DepartPersonnage();
-            }
+            // if (Time.time >= delaiProchainDeplacement)
+            // {
+            //     DepartPersonnage();
+            // }
             
         }
         
@@ -113,10 +113,10 @@ namespace GamePlay.Personnages
             deplacementPersonnage.Execute(_transform, directionDeplacement, 
                 vitesseDeplacement);
             
-            if (Time.time >= delaiProchainDeplacement)
-            {
-                DepartPersonnage();
-            }
+            // if (Time.time >= delaiProchainDeplacement)
+            // {
+            //     DepartPersonnage();
+            // }
         }
         
         /// <summary>

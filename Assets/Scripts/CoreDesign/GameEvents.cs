@@ -4,15 +4,15 @@ namespace CoreDesign
 {
     public static class GameEvents 
     {
-        public static Action PersonnageTraverseCollider { get; set; }
+        public static Action PersonnageTraverseColliderSon { get; set; }
         public static Action CommenceDeplacementVertical { get; set; }
         public static Action EndOfFilm { get; set; }
         public static Action BackgroundFade { get; set; }
     
 
-        public static void RaisePersonnageTraverseColliderAction()
+        public static void RaisePersonnageTraverseColliderSonAction()
         {
-            PersonnageTraverseCollider?.Invoke();
+            PersonnageTraverseColliderSon?.Invoke();
         }
 
         public static void RaiseEndOfFilmAction()
@@ -24,8 +24,7 @@ namespace CoreDesign
         {
             CommenceDeplacementVertical?.Invoke();
         }
-
-
+        
         public static void RaiseBackgroundFadeAction()
         {
             BackgroundFade?.Invoke();

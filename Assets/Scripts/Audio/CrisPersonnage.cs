@@ -20,12 +20,12 @@ namespace CatchMeIfYouCan.Audio
 
         private void OnEnable()
         {
-            GameEvents.PersonnageTraverseCollider += DeclencheCrisPersonnage;
+            GameEvents.PersonnageTraverseColliderSon += DeclencheCrisPersonnage;
         }
 
         private void OnDisable()
         {
-            GameEvents.PersonnageTraverseCollider -= DeclencheCrisPersonnage;
+            GameEvents.PersonnageTraverseColliderSon -= DeclencheCrisPersonnage;
         }
 
         private void DeclencheCrisPersonnage()
