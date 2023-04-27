@@ -433,8 +433,6 @@ GameObject:
   - component: {fileID: 95000013941187434}
   - component: {fileID: 1166467740}
   - component: {fileID: 1166467744}
-  - component: {fileID: 1166467751}
-  - component: {fileID: 1166467752}
   m_Layer: 0
   m_Name: Character_14
   m_TagString: Ane
@@ -550,7 +548,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeDeplacement: 0
   vitesseDeplacement: 5
+  limitePositionX: 0
   delaiProchainDeplacement: 9
+  nombreMaxDeplacement: 0
+  nombreDeplacementEffectue: 0
   time: 0
 --- !u!61 &1166467744
 BoxCollider2D:
@@ -578,34 +579,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.8486419, y: 7.7219973}
   m_EdgeRadius: 0
---- !u!114 &1166467751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013651748482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a90fa374b7f34391b61b4300fb5dad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limiteDeplacementX: 21
-  nombreMaxDeplacement: 1
-  nombreDeplacementEffectue: 0
-  estEnArret: 0
---- !u!114 &1166467752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013651748482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64760f8098eae442884bb24f0e4d1a70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1000013871768986
 GameObject:
   m_ObjectHideFlags: 0

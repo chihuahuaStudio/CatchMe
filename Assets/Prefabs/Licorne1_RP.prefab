@@ -431,9 +431,7 @@ GameObject:
   - component: {fileID: 6407907386230616346}
   - component: {fileID: 6490369651481349216}
   - component: {fileID: 6463441917832365730}
-  - component: {fileID: 7702087770981532750}
   - component: {fileID: 4000011418353941}
-  - component: {fileID: 4000011418353942}
   m_Layer: 0
   m_Name: Licorne1_RP
   m_TagString: Untagged
@@ -535,24 +533,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7702087770981532750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6404344816976772850}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d801ad84f740447c9df81b7bc12fee4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitesse: -5
-  limiteX: -21
-  limiteDeplacement: 2
-  delaiDeplacement: 9
-  time: 0
-  nmbrDeplacement: 0
 --- !u!114 &4000011418353941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,28 +542,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6404344816976772850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a90fa374b7f34391b61b4300fb5dad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limiteDeplacementX: -21
-  nombreMaxDeplacement: 2
-  nombreDeplacementEffectue: 0
-  estEnArret: 0
---- !u!114 &4000011418353942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6404344816976772850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a67709879a949eb8cad16d7db3e2db, type: 3}
+  m_Script: {fileID: 11500000, guid: 72fc633f77b8b460298779c393005c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   typeDeplacement: 1
   vitesseDeplacement: 5
+  limitePositionX: -13
   delaiProchainDeplacement: 9
+  nombreMaxDeplacement: 2
+  nombreDeplacementEffectue: 0
   time: 0
 --- !u!1 &6404344817073687154
 GameObject:

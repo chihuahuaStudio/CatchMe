@@ -97,8 +97,6 @@ GameObject:
   - component: {fileID: 95000010517452224}
   - component: {fileID: 1370556201}
   - component: {fileID: 1370556205}
-  - component: {fileID: 1370556212}
-  - component: {fileID: 1370556213}
   m_Layer: 0
   m_Name: Character_17
   m_TagString: Licorne2
@@ -214,7 +212,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeDeplacement: 0
   vitesseDeplacement: 5
+  limitePositionX: 0
   delaiProchainDeplacement: 9
+  nombreMaxDeplacement: 0
+  nombreDeplacementEffectue: 0
   time: 0
 --- !u!61 &1370556205
 BoxCollider2D:
@@ -242,34 +243,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.8486419, y: 7.7219973}
   m_EdgeRadius: 0
---- !u!114 &1370556212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011181575560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a90fa374b7f34391b61b4300fb5dad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limiteDeplacementX: 21
-  nombreMaxDeplacement: 3
-  nombreDeplacementEffectue: 0
-  estEnArret: 0
---- !u!114 &1370556213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011181575560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64760f8098eae442884bb24f0e4d1a70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1000011260230838
 GameObject:
   m_ObjectHideFlags: 0

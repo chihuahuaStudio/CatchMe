@@ -182,8 +182,6 @@ GameObject:
   - component: {fileID: 1434420969}
   - component: {fileID: 1434420975}
   - component: {fileID: 5660883072841785423}
-  - component: {fileID: 1434420982}
-  - component: {fileID: 1434420983}
   m_Layer: 0
   m_Name: Character_15
   m_TagString: Cheval
@@ -299,7 +297,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeDeplacement: 0
   vitesseDeplacement: 5
+  limitePositionX: 0
   delaiProchainDeplacement: 9
+  nombreMaxDeplacement: 0
+  nombreDeplacementEffectue: 0
   time: 0
 --- !u!61 &1434420975
 BoxCollider2D:
@@ -423,34 +424,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1434420982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010812422768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a90fa374b7f34391b61b4300fb5dad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limiteDeplacementX: 21
-  nombreMaxDeplacement: 4
-  nombreDeplacementEffectue: 0
-  estEnArret: 0
---- !u!114 &1434420983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010812422768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64760f8098eae442884bb24f0e4d1a70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1000011494353502
 GameObject:
   m_ObjectHideFlags: 0

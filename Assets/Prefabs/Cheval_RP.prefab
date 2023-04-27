@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 986981867578832180}
   - component: {fileID: 1102660463326470148}
   - component: {fileID: 931613158433012090}
-  - component: {fileID: 6597634083406916538}
   - component: {fileID: 4000013342293981}
-  - component: {fileID: 4000013342293982}
   m_Layer: 0
   m_Name: Cheval_RP
   m_TagString: Untagged
@@ -115,24 +113,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6597634083406916538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990737745695619756}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d801ad84f740447c9df81b7bc12fee4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitesse: -5
-  limiteX: -21
-  limiteDeplacement: 3
-  delaiDeplacement: 9
-  time: 0
-  nmbrDeplacement: 0
 --- !u!114 &4000013342293981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,28 +122,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 990737745695619756}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a90fa374b7f34391b61b4300fb5dad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limiteDeplacementX: -21
-  nombreMaxDeplacement: 3
-  nombreDeplacementEffectue: 0
-  estEnArret: 0
---- !u!114 &4000013342293982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990737745695619756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a67709879a949eb8cad16d7db3e2db, type: 3}
+  m_Script: {fileID: 11500000, guid: 72fc633f77b8b460298779c393005c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   typeDeplacement: 1
   vitesseDeplacement: 5
+  limitePositionX: -13
   delaiProchainDeplacement: 9
+  nombreMaxDeplacement: 3
+  nombreDeplacementEffectue: 0
   time: 0
 --- !u!1 &990737745806624998
 GameObject:

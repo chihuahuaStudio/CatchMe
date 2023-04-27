@@ -263,9 +263,7 @@ GameObject:
   - component: {fileID: 3941765963134977907}
   - component: {fileID: 3768649068535799901}
   - component: {fileID: 4029666954299119623}
-  - component: {fileID: 743550262218039608}
   - component: {fileID: 4000011076489142}
-  - component: {fileID: 4000011076489143}
   m_Layer: 0
   m_Name: "Ze\u0300bre_RP"
   m_TagString: Zebre
@@ -367,24 +365,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &743550262218039608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944677453236583725}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d801ad84f740447c9df81b7bc12fee4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitesse: -5
-  limiteX: -21
-  limiteDeplacement: 1
-  delaiDeplacement: 9
-  time: 0
-  nmbrDeplacement: 0
 --- !u!114 &4000011076489142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,28 +374,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 3944677453236583725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a90fa374b7f34391b61b4300fb5dad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limiteDeplacementX: -21
-  nombreMaxDeplacement: 1
-  nombreDeplacementEffectue: 0
-  estEnArret: 0
---- !u!114 &4000011076489143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944677453236583725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a67709879a949eb8cad16d7db3e2db, type: 3}
+  m_Script: {fileID: 11500000, guid: 72fc633f77b8b460298779c393005c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   typeDeplacement: 1
   vitesseDeplacement: 5
+  limitePositionX: -13
   delaiProchainDeplacement: 9
+  nombreMaxDeplacement: 1
+  nombreDeplacementEffectue: 0
   time: 0
 --- !u!1 &3944677454568046743
 GameObject:

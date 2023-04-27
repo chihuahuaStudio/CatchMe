@@ -7,34 +7,34 @@
 
 using CoreDesign;
 using UnityEngine;
-using UnityEngine.Serialization;
+
 
 namespace GamePlay.Personnages
 {
     public class DeplacementArrierePlan : MonoBehaviour
     {
         #region Déclarations des Variables
-        
-        [Header("Paramètre de Déplacement")]
-        [Tooltip("Vitesse de déplacement")]
-        [SerializeField] float vitesse;
-        
-        [Tooltip("Limite déplcement X")]
-        [SerializeField] float limiteX;
-        
-        [Tooltip("Limite de déplacement avant disparaître")]
-        [SerializeField] int limiteDeplacement;
-        
-        [Tooltip("Delai de départ")]
-        [SerializeField] float delaiDeplacement;
-        
+
+        [Header("Paramètre de Déplacement")] [Tooltip("Vitesse de déplacement")] [SerializeField]
+        float vitesse;
+
+        [Tooltip("Limite déplcement X")] [SerializeField]
+        float limiteX;
+
+        [Tooltip("Limite de déplacement avant disparaître")] [SerializeField]
+        int limiteDeplacement;
+
+        [Tooltip("Delai de départ")] [SerializeField]
+        float delaiDeplacement;
+
         [Header("Référence Seulementt")]
         [Tooltip("Affichage du temps écoulé depuis le début du programme")]
-        [SerializeField] float time;
-        
-        [Tooltip("Nombre de déplacement")]
-        [SerializeField] int nmbrDeplacement = 0;
-        
+        [SerializeField]
+        float time;
+
+        [Tooltip("Nombre de déplacement")] [SerializeField]
+        int nmbrDeplacement = 0;
+
         //Référence des composants
         private Transform _persoTransfo;
         private Animator _persoAnimator;
@@ -64,7 +64,7 @@ namespace GamePlay.Personnages
             _posDepart = _persoTransfo.position; //position de départ
             _vitesseInitiale = vitesse; //Vitesse de départ
             _delaiInitial = delaiDeplacement; //délai du déplacement de départ
-     
+
 
         }
 
@@ -91,12 +91,12 @@ namespace GamePlay.Personnages
             if (Time.time >= delaiDeplacement)
             {
                 vitesse = _vitesseInitiale;
-                _persoTransfo.Translate(Vector3.right 
+                _persoTransfo.Translate(Vector3.right
                                         * (vitesse * Time.deltaTime));
                 _pos = _persoTransfo.position;
                 delaiDeplacement = _delaiInitial;
 
-            
+
                 //condition d'arret
                 if (_pos.x <= limiteX)
                 {
@@ -104,17 +104,17 @@ namespace GamePlay.Personnages
                     vitesse = ZERO;
                     RetourPositionInitiale();
                 }
-            
+
             }
-            
+
             //calcule limite déplacement
             if (nmbrDeplacement >= limiteDeplacement)
             {
                 Destroy(gameObject);
             }
-        
+
         }
-        
+
         private void RetourPositionInitiale()
         {
             _persoTransfo.position = _posDepart;
@@ -129,6 +129,6 @@ namespace GamePlay.Personnages
         #endregion
 
 
-    
+
     }
 }

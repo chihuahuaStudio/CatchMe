@@ -8,27 +8,20 @@ namespace CoreDesign
         public static Action CommenceDeplacementVertical { get; set; }
         public static Action EndOfFilm { get; set; }
         public static Action BackgroundFade { get; set; }
-    
 
-        public static void RaisePersonnageTraverseColliderSonAction()
-        {
+        //Invocation des Actions
+        public static void RaisePersonnageTraverseColliderSonAction() =>
             PersonnageTraverseColliderSon?.Invoke();
-        }
-
-        public static void RaiseEndOfFilmAction()
-        {
-            EndOfFilm?.Invoke();
-        }
-
-        public static void RaiseCommenceDeplacementVerticalAction()
-        {
-            CommenceDeplacementVertical?.Invoke();
-        }
         
-        public static void RaiseBackgroundFadeAction()
-        {
+        public static void RaiseEndOfFilmAction() =>
+            EndOfFilm?.Invoke();
+        
+        public static void RaiseCommenceDeplacementVerticalAction() =>
+            CommenceDeplacementVertical?.Invoke();
+        
+        public static void RaiseBackgroundFadeAction() =>
             BackgroundFade?.Invoke();
-        }
+        
         
     }
 }

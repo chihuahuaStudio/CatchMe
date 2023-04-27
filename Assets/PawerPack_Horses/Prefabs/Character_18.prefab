@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 158772375}
   - component: {fileID: 158772381}
   - component: {fileID: 1843753936365726495}
-  - component: {fileID: 158772388}
-  - component: {fileID: 158772389}
   m_Layer: 0
   m_Name: Character_18
   m_TagString: Zebre
@@ -131,7 +129,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeDeplacement: 0
   vitesseDeplacement: 5
+  limitePositionX: 0
   delaiProchainDeplacement: 9
+  nombreMaxDeplacement: 0
+  nombreDeplacementEffectue: 0
   time: 0
 --- !u!61 &158772381
 BoxCollider2D:
@@ -255,34 +256,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &158772388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011281995372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a90fa374b7f34391b61b4300fb5dad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limiteDeplacementX: 21
-  nombreMaxDeplacement: 1
-  nombreDeplacementEffectue: 0
-  estEnArret: 0
---- !u!114 &158772389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011281995372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64760f8098eae442884bb24f0e4d1a70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1000011760229202
 GameObject:
   m_ObjectHideFlags: 0
