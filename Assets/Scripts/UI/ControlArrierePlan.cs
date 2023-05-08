@@ -16,7 +16,7 @@ namespace CatchMeIfYouCan.UI
         private SpriteRenderer _panel;
         private float _alpha;
         private float _time;
-        private const float VITESSE_FADE = 0.3f;
+        private const float VITESSE_FADE = 0.5f;
 
         #endregion
 

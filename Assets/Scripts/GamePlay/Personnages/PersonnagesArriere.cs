@@ -9,7 +9,7 @@ using UnityEngine;
 namespace GamePlay.Personnages
 {
     [RequireComponent(typeof(Animator))]
-    public class PersonnagesArriere : MonoBehaviour, IDeplacement
+    public class PersonnagesArriere : MonoBehaviour, IDeplacement, ICalculeDeplacement, ISetDeplacement
     {
         #region Déclarations des Variables
 
@@ -142,7 +142,7 @@ namespace GamePlay.Personnages
         public void SetPausePersonnage()
         {
             _transform.position = _positionDepart;
-            CompteNombreDeDeplacement();
+            CalculeNombreDeDeplacement();
             UpdateTimer();
             vitesseDeplacement = VITESSE_NULL;
             _persoAnimator.enabled = false;
@@ -153,15 +153,15 @@ namespace GamePlay.Personnages
             _deplacementPersonnage.Execute(transfo, direction, vitesse);
         }
 
-        public void CompteNombreDeDeplacement()
+        public void CalculeNombreDeDeplacement()
         {
             nombreDeplacementEffectue++;
 
         }
 
-        public void CalculeLimiteDeplacement(float xPosition, float limiteXPosition)
+        public void CalculeLimiteDeplacement(float currentPosition, float limitePosition)
         {
-            if (xPosition <= limiteXPosition)
+            if (currentPosition <= limitePosition)
             {
                 SetPausePersonnage();
             }

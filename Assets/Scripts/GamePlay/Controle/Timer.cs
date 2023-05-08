@@ -12,7 +12,6 @@ namespace GamePlay.Controle
 
         [SerializeField] private float timer;
         [SerializeField] private float timerArretFilm;
-        [SerializeField] private float debutDeplacementVertical;
         [SerializeField] private float backgoundFade;
         
         void Update()
@@ -21,9 +20,6 @@ namespace GamePlay.Controle
         
             if(timer >= timerArretFilm)
                 GameEvents.RaiseEndOfFilmAction();
-            
-            if(timer >= debutDeplacementVertical)
-                GameEvents.RaiseCommenceDeplacementVerticalAction();
             
             if (timer >= backgoundFade)
                 GameEvents.RaiseBackgroundFadeAction();

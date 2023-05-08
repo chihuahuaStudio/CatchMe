@@ -5685,7 +5685,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   timerArretFilm: 75
-  debutDeplacementVertical: 57
   backgoundFade: 60
 --- !u!4 &906892450
 Transform:
@@ -5712,12 +5711,12 @@ GameObject:
   m_Component:
   - component: {fileID: 919566671}
   m_Layer: 0
-  m_Name: "PersonnageCach\xE9"
+  m_Name: "AnimauxCach\xE9s"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &919566671
 Transform:
   m_ObjectHideFlags: 0
@@ -6069,34 +6068,14 @@ GameObject:
   - component: {fileID: 945808870}
   - component: {fileID: 945808869}
   - component: {fileID: 945808868}
-  - component: {fileID: 945808865}
   - component: {fileID: 945808871}
-  - component: {fileID: 945808873}
   m_Layer: 0
   m_Name: Personnage_ArP
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &945808865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945808864}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d801ad84f740447c9df81b7bc12fee4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitesse: -5
-  limiteX: -21
-  limiteDeplacement: 3
-  delaiDeplacement: 9
-  time: 0
-  nmbrDeplacement: 0
+  m_IsActive: 1
 --- !u!95 &945808868
 Animator:
   serializedVersion: 4
@@ -6193,32 +6172,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 945808864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a67709879a949eb8cad16d7db3e2db, type: 3}
+  m_Script: {fileID: 11500000, guid: 72fc633f77b8b460298779c393005c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   typeDeplacement: 1
-  vitesseDeplacement: 0
-  limitePositionX: 0
-  delaiProchainDeplacement: 0
-  nombreMaxDeplacement: 0
-  nombreDeplacementEffectue: 0
-  time: 0
---- !u!114 &945808873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945808864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a90fa374b7f34391b61b4300fb5dad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limiteDeplacementX: -21
+  vitesseDeplacement: 5
+  limitePositionX: -11
+  delaiProchainDeplacement: 9
   nombreMaxDeplacement: 3
   nombreDeplacementEffectue: 0
-  estEnArret: 0
+  time: 0
 --- !u!4 &948563662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4296949373589832263, guid: 1e605f131dfe2492e8cde2ee87de8eac, type: 3}
@@ -14032,6 +13995,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409045969}
     m_Modifications:
+    - target: {fileID: 4000014664278731, guid: d3b3aae62b3a946d58eafac4824cd4b4, type: 3}
+      propertyPath: limitePositionX
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014664278731, guid: d3b3aae62b3a946d58eafac4824cd4b4, type: 3}
+      propertyPath: delaiProchainDeplacement
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 943096971005009329, guid: d3b3aae62b3a946d58eafac4824cd4b4, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14089,6 +14060,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409045969}
     m_Modifications:
+    - target: {fileID: 4000013342293981, guid: 15c8953f321ce4cd797050e7962f5639, type: 3}
+      propertyPath: limitePositionX
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013342293981, guid: 15c8953f321ce4cd797050e7962f5639, type: 3}
+      propertyPath: delaiProchainDeplacement
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 986981867578832180, guid: 15c8953f321ce4cd797050e7962f5639, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -14472,6 +14451,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheval_Cache
       objectReference: {fileID: 0}
+    - target: {fileID: 2475856239201965488, guid: 3628fb1cfea72482e9dd0a98cb09592d, type: 3}
+      propertyPath: delaiDeplacement
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475856239201965488, guid: 3628fb1cfea72482e9dd0a98cb09592d, type: 3}
+      propertyPath: vitesseDeplacement
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3628fb1cfea72482e9dd0a98cb09592d, type: 3}
 --- !u!1001 &2578119854069061848
@@ -14481,6 +14468,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 919566671}
     m_Modifications:
+    - target: {fileID: 2578119854262322028, guid: b727a467874ac4468881f3b759532a1b, type: 3}
+      propertyPath: delaiDeplacement
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578119854262322028, guid: b727a467874ac4468881f3b759532a1b, type: 3}
+      propertyPath: vitesseDeplacement
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5429079360963158848, guid: b727a467874ac4468881f3b759532a1b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -14672,6 +14667,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 919566671}
     m_Modifications:
+    - target: {fileID: 6303530631889702759, guid: b024ae88771694f5c9f2c3dde8c5551a, type: 3}
+      propertyPath: delaiDeplacement
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303530631889702759, guid: b024ae88771694f5c9f2c3dde8c5551a, type: 3}
+      propertyPath: vitesseDeplacement
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7178969826505237256, guid: b024ae88771694f5c9f2c3dde8c5551a, type: 3}
       propertyPath: m_Name
       value: Ane_Cache
@@ -14734,6 +14737,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409045969}
     m_Modifications:
+    - target: {fileID: 4000011076489142, guid: 3d0fc9745954a412f9ee155b5b9586f5, type: 3}
+      propertyPath: limitePositionX
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011076489142, guid: 3d0fc9745954a412f9ee155b5b9586f5, type: 3}
+      propertyPath: delaiProchainDeplacement
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3941765963134977907, guid: 3d0fc9745954a412f9ee155b5b9586f5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -14791,6 +14802,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409045969}
     m_Modifications:
+    - target: {fileID: 4000011385164515, guid: 0d675694efa73491ca2727f826370cd9, type: 3}
+      propertyPath: limitePositionX
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011385164515, guid: 0d675694efa73491ca2727f826370cd9, type: 3}
+      propertyPath: nombreMaxDeplacement
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011385164515, guid: 0d675694efa73491ca2727f826370cd9, type: 3}
+      propertyPath: delaiProchainDeplacement
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3959974153703278843, guid: 0d675694efa73491ca2727f826370cd9, type: 3}
       propertyPath: m_Name
       value: Licorne2_RP
@@ -14905,6 +14928,14 @@ PrefabInstance:
     - target: {fileID: 647326786162846764, guid: ee1bc28dac32b4ba8a1b01eead69c42d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246908446689445971, guid: ee1bc28dac32b4ba8a1b01eead69c42d, type: 3}
+      propertyPath: delaiDeplacement
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246908446689445971, guid: ee1bc28dac32b4ba8a1b01eead69c42d, type: 3}
+      propertyPath: vitesseDeplacement
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee1bc28dac32b4ba8a1b01eead69c42d, type: 3}
@@ -15258,6 +15289,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6357006727512416554, guid: 70d7a3c837a3c4f7cbe0061af7a367c7, type: 3}
+      propertyPath: delaiDeplacement
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357006727512416554, guid: 70d7a3c837a3c4f7cbe0061af7a367c7, type: 3}
+      propertyPath: vitesseDeplacement
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70d7a3c837a3c4f7cbe0061af7a367c7, type: 3}
 --- !u!1001 &6405033653013901333
@@ -15267,6 +15306,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409045969}
     m_Modifications:
+    - target: {fileID: 4000011418353941, guid: 783120a74ebaa44aa90adc25050f2116, type: 3}
+      propertyPath: limitePositionX
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011418353941, guid: 783120a74ebaa44aa90adc25050f2116, type: 3}
+      propertyPath: delaiProchainDeplacement
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6404344816976772850, guid: 783120a74ebaa44aa90adc25050f2116, type: 3}
       propertyPath: m_Name
       value: Licorne1_RP

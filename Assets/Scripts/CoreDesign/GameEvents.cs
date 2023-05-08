@@ -1,11 +1,11 @@
 using System;
+using UnityEngine;
 
 namespace CoreDesign
 {
     public static class GameEvents 
     {
         public static Action PersonnageTraverseColliderSon { get; set; }
-        public static Action CommenceDeplacementVertical { get; set; }
         public static Action EndOfFilm { get; set; }
         public static Action BackgroundFade { get; set; }
 
@@ -15,9 +15,6 @@ namespace CoreDesign
         
         public static void RaiseEndOfFilmAction() =>
             EndOfFilm?.Invoke();
-        
-        public static void RaiseCommenceDeplacementVerticalAction() =>
-            CommenceDeplacementVertical?.Invoke();
         
         public static void RaiseBackgroundFadeAction() =>
             BackgroundFade?.Invoke();
